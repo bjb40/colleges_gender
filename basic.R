@@ -55,7 +55,7 @@ t=reshape(t,direction='long',varying=2:11)
 dat=merge(fe,t,by=c('id','instnm','time'));rm(t,fe)
 dat$prop_female=dat$fe/dat$tot
 
-#generate box plots by year
+#generate plots by year
 byus=grepl('Brigham',dat$instnm,ignore.case=TRUE)
 grace=grepl('Graceland',dat$instnm,ignore.case=TRUE)
 dat$Affiliation=0
